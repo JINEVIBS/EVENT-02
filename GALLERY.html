@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS image animation on hover</title>    
+    <style type="text/css">
+      body{
+  background: darkgray;
+}
+.wrapper{
+  width: 1370px;
+  margin: 0 auto;
+}
+figure {
+  width: 32%;
+  float: left;
+  margin: 0;
+}
+ 
+.box {
+  position: relative;
+  height: 300px;
+  width: 400px;
+  margin: 40% auto 0;
+  color: #fff;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+ 
+.box img {
+  position: absolute;
+  left: 0;
+  width: 400px;
+  height: 300px;
+  transition: opacity 2s ease-in-out;
+}
+.box img.img-front:hover{
+  opacity:0;
+  cursor: pointer;
+}
+    </style>
+</head>
+<body>
+<div class="wrapper">
+  <figure>
+    <div class="box">
+      <img class="img-back" src="CHOCOLATE HILLS.jpg">
+      <img class="img-front" src="CLEAN UP.jpg">
+    </div>
+  </figure>
+  <figure>
+    <div class="box">
+      <img class="img-back" src="SA1.jpg">
+      <img class="img-front" src="SA2.jpg">
+    </div>
+  </figure>
+  <figure>
+    <div class="box">
+      <img class="img-back" src="SIMALA.jpg">
+      <img class="img-front" src="LAKE DANAO.jpg">
+    </div>
+  </figure>
+</div>
+</body>
+</html>
